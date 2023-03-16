@@ -1,17 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <NavBar />
+  <hr />
+  <JumbotronPage />
+  <CTAPage />
+  <CardPage />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavBar from "./components/NavBar.vue";
+import JumbotronPage from "./components/JumbotronPage.vue";
+import CTAPage from "./components/CTAPage.vue";
+import CardPage from "./components/CardPage.vue";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: { NavBar, JumbotronPage, CTAPage, CardPage },
+};
 </script>
 
 <style>
